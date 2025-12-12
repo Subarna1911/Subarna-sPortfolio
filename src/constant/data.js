@@ -72,10 +72,10 @@ export const techLogos = [
 
 
 {
- video:"",
+  video:"https://www.youtube.com/embed/nF6ErnalPsI?si=jbiXjJ0wZrw3xSXP",
   projectName:"UTube",
-  projectDetails:"Developed FimlyGPT, a Netflix-style streaming interface built with React.js and Tailwind CSS, leveraging Redux for state management. Integrated OpenAI APIs to deliver dynamic, user-specific movie recommendations based on search parameters. Implemented responsive UI, secure API handling, and seamless real-time content filtering for an elevated user experience.",
-  projectLink:"https://github.com/Subarna1911/Filmygpt.git",
+  projectDetails:"Built a YouTube clone using React.js with responsive design, video search, and dynamic video playback features",
+  projectLink:"https://github.com/Subarna1911/uTube.git",
 },
 
 {
