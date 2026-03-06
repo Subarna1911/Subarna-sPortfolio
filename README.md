@@ -1,16 +1,72 @@
-# React + Vite
+# Subarna | Front End Engineer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Status](https://img.shields.io/badge/Status-Work_in_Progress-yellow)
+![React](https://img.shields.io/badge/React-19.2.0-blue?logo=react)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.17-38B2AC?logo=tailwind-css)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.23.25-black?logo=framer)
 
-Currently, two official plugins are available:
+A modern, highly interactive, and aesthetically premium portfolio web application built to showcase my journey, skills, and projects as a Front End Engineer. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Turning websites into experiences people love.
 
-## React Compiler
+## ✨ Current Features (WIP)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Immersive Hero Section:** Includes a muted, looped video background overlay with custom playback rates.
+- **Dynamic Theme Switcher:** Fully functional Light, Dark, and System preference theme toggling using the Context API and `localStorage`.
+- **Custom Animated Cursor:** A tailored glowing cursor effect that follows the mouse movement for a premium feel.
+- **Scroll-Linked Overlay Navigation:** A sleek, animated full-screen menu powered by Framer Motion.
+- **Interactive Projects Carousel:** Features touch-friendly sliding carousels utilizing `Swiper.js` to showcase my recent work and GitHub repsitories.
+- **Animated Quotations & Typography:** Subtle staggering micro-animations on text to boost engagement.
+- **Functional Contact Form:** Integrated with `Formik` and `Web3Forms` with environment variable security for receiving live messages straight to my inbox.
+- **SEO & Accessibility Optimized:** Includes appropriate ARIA labels, semantic tags, and Open Graph metadata for social sharing.
+- **Fully Responsive:** Tailored experiences from mobile phones to high-resolution desktop monitors.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack & Dependencies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Core Engine
+- **Vite:** Next Generation Frontend Tooling.
+- **React (v19):** For building the component-based UI.
+
+### Styling & Animation
+- **Tailwind CSS (v4):** Utility-first CSS framework for rapid UI development and dark mode handling.
+- **Framer Motion:** For fluid, declarative mount/unmount and scroll animations.
+- **Lucide React / React Icons:** For clean, scalable iconography.
+
+### Utilities
+- **Swiper:** Modern touch slider for the project showcase.
+- **Formik:** For scalable and validated form state management.
+
+## 🚀 Running Locally
+
+To run this project on your local machine:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Subarna1911/MyPortfolio.git
+   cd MyPortfolio/portfolio
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Set up Environment Variables:**
+   Create a `.env` file in the root of the `portfolio` directory and add your Web3Forms access key:
+   ```env
+   VITE_WEB3FORMS_ACCESS_KEY="your_web3forms_access_key_here"
+   ```
+
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+## 🏗️ Upcoming Features / Roadmap
+- [ ] Add dedicated 'Gallery' page.
+- [ ] Add dedicated 'Blogs' page.
+- [ ] Enhance loading screens and page transitions.
+- [ ] Further performance optimizations and bundle size reduction.
+
+---
+*Designed and Developed with ❤️ by Subarna.*
