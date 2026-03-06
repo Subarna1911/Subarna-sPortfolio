@@ -4,7 +4,7 @@ import { FiX } from "react-icons/fi";
 
 const OverlayMenu = ({ isOpen, onClose }) => {
 
-  const menuItems = ["home", "about", "projects", "skills", "contact"];
+  const menuItems = ["home", "about", "projects", "skills", "contact", "Gallery", "Blogs"];
 
   return (
     <AnimatePresence>

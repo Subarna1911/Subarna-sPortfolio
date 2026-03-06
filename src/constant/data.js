@@ -10,10 +10,10 @@ import git from '../assets/git.svg';
 import postman from '../assets/postman.png';
 import next from '../assets/next-js.svg';
 import github from '../assets/github.png';
-import linkedIn from  '../assets/linkedIn.png';
-import  youtube from '../assets/youtube.avif';
+import linkedIn from '../assets/linkedIn.png';
+import youtube from '../assets/youtube.avif';
 import gmail from '../assets/gmailLogo.webp';
-  
+
 export const aboutContents = [
   {
     id: "About",
@@ -61,37 +61,37 @@ export const techLogos = [
   next,
 ];
 
- export const projectsData = [
+export const projectsData = [
 
-{
-  video: "https://www.youtube.com/embed/xynZYjZ9Z20?autoplay=1&mute=1&controls=0&loop=1&playlist=xynZYjZ9Z20",
-  projectName:"FilmyGpt",
-  projectDetails:"Developed FimlyGPT, a Netflix-style streaming interface built with React.js and Tailwind CSS, leveraging Redux for state management. Integrated OpenAI APIs to deliver dynamic, user-specific movie recommendations based on search parameters. Implemented responsive UI, secure API handling, and seamless real-time content filtering for an elevated user experience.",
-  projectLink:"https://github.com/Subarna1911/Filmygpt.git",
-},
+  {
+    video: "https://www.youtube.com/embed/xynZYjZ9Z20?autoplay=1&mute=1&controls=0&loop=1&playlist=xynZYjZ9Z20",
+    projectName: "FilmyGpt",
+    projectDetails: "Developed FimlyGPT, a Netflix-style streaming interface built with React.js and Tailwind CSS, leveraging Redux for state management. Integrated OpenAI APIs to deliver dynamic, user-specific movie recommendations based on search parameters. Implemented responsive UI, secure API handling, and seamless real-time content filtering for an elevated user experience.",
+    projectLink: "https://github.com/Subarna1911/Filmygpt.git",
+  },
 
 
-{
-  video:"https://www.youtube.com/embed/nF6ErnalPsI?si=jbiXjJ0wZrw3xSXP",
-  projectName:"UTube",
-  projectDetails:"Built a YouTube clone using React.js with responsive design, video search, and dynamic video playback features",
-  projectLink:"https://github.com/Subarna1911/uTube.git",
-},
+  {
+    video: "https://www.youtube.com/embed/nF6ErnalPsI?si=jbiXjJ0wZrw3xSXP",
+    projectName: "UTube",
+    projectDetails: "Built a YouTube clone using React.js with responsive design, video search, and dynamic video playback features",
+    projectLink: "https://github.com/Subarna1911/uTube.git",
+  },
 
-{
-  video:"https://www.youtube.com/embed/mYKB3NPlbzU?autoplay=1&mute=1&controls=0&loop=1&playlist=mYKB3NPlbzU",
-  projectName:"Elementor Clone",
-  projectDetails:"A fully responsive Elementor-style page builder clone built using plain HTML, CSS, and JavaScript. This project replicates core UI interactions, drag-and-drop layout behavior, and modular component styling—demonstrating strong fundamentals in clean interface architecture and pixel-perfect responsive design without relying on external frameworks",
-  projectLink:"https://subarna1911.github.io/Elementor-Site-Clone/",
-},
+  {
+    video: "https://www.youtube.com/embed/mYKB3NPlbzU?autoplay=1&mute=1&controls=0&loop=1&playlist=mYKB3NPlbzU",
+    projectName: "Elementor Clone",
+    projectDetails: "A fully responsive Elementor-style page builder clone built using plain HTML, CSS, and JavaScript. This project replicates core UI interactions, drag-and-drop layout behavior, and modular component styling—demonstrating strong fundamentals in clean interface architecture and pixel-perfect responsive design without relying on external frameworks",
+    projectLink: "https://subarna1911.github.io/Elementor-Site-Clone/",
+  },
 
 ]
 
-export const projects  = "https://github.com/Subarna1911";
+export const projects = "https://github.com/Subarna1911";
 
 export const contactLinks = [
-  { icon: github ,   url: "https://github.com/Subarna1911"},
-  { icon: linkedIn , url: "https://www.linkedin.com/in/subarna-t-030b211b6/"},
-  { icon: gmail , url: "subarnablone09@gmail.com"},
-  {icon: youtube,    url: "https://www.youtube.com/@Subarnablone"},
+  { icon: github, url: "https://github.com/Subarna1911", name: "GitHub" },
+  { icon: linkedIn, url: "https://www.linkedin.com/in/subarna-t-030b211b6/", name: "LinkedIn" },
+  { icon: gmail, url: "subarnablone09@gmail.com", name: "Email" },
+  { icon: youtube, url: "https://www.youtube.com/@Subarnablone", name: "YouTube" },
 ];

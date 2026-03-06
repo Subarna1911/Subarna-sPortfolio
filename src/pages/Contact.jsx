@@ -10,31 +10,31 @@ const Contact = () => {
       message: "",
     },
 
-   onSubmit: async (values, { resetForm }) => {
-  try {
-    const formData = new FormData();
-    formData.append("access_key", "ecbadfa5-8584-4544-a35e-5d554121e00a");
-    formData.append("name", values.name);
-    formData.append("email", values.email);
-    formData.append("message", values.message);
+    onSubmit: async (values, { resetForm }) => {
+      try {
+        const formData = new FormData();
+        formData.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
+        formData.append("name", values.name);
+        formData.append("email", values.email);
+        formData.append("message", values.message);
 
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData,
+        });
 
-    const result = await res.json();
+        const result = await res.json();
 
-    if (result.success) {
-      alert("Message sent successfully!");
-      resetForm();
-    } else {
-      alert("Failed to send message.");
-    }
-  } catch (error) {
-    alert("Network error. Please try again.");
-  }
-},
+        if (result.success) {
+          alert("Message sent successfully!");
+          resetForm();
+        } else {
+          alert("Failed to send message.");
+        }
+      } catch (error) {
+        alert("Network error. Please try again.");
+      }
+    },
 
   });
 
@@ -58,8 +58,8 @@ const Contact = () => {
                 type="text"
                 name="name"
                 className="w-full border px-3 md:py-4 py-2 rounded-sm"
-                onChange = {formik.handleChange}
-                value = {formik.values.name}
+                onChange={formik.handleChange}
+                value={formik.values.name}
               />
             </div>
 
@@ -79,7 +79,7 @@ const Contact = () => {
               <textarea
                 name="message"
                 className="w-full border px-3 md:py-4 py-2 rounded-sm h-28"
-                onChange = {formik.handleChange}
+                onChange={formik.handleChange}
                 value={formik.values.message}
               />
             </div>
@@ -94,11 +94,11 @@ const Contact = () => {
 
           <div className="flex justify-center items-center gap-4">
             {contactLinks.map((item, index) => (
-              <a key={index} href={item.url} target="_blank" rel="noopener noreferrer">
+              <a key={index} href={item.url} target="_blank" rel="noopener noreferrer" aria-label={item.name}>
                 <img
                   className="w-10 h-10 object-contain rounded-full hover:cursor-pointer hover:opacity-80 transition"
                   src={item.icon}
-                  alt="contact-icon"
+                  alt={item.name}
                 />
               </a>
             ))}

@@ -18,7 +18,7 @@ const Skills = () => {
           <div className="flex animate-scroll">
             {[...techLogos, ...techLogos].map((logo, index) => (
               <img
-                key={index}
+                key={`logo-${index}`}
                 src={logo}
                 alt="tech logo"
                 className="h-16 w-24 mx-4 object-contain hover:cursor-pointer hover:animate-pulse"
