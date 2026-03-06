@@ -1,10 +1,5 @@
 # Subarna | Front End Engineer Portfolio
 
-![Portfolio Status](https://img.shields.io/badge/Status-Work_in_Progress-yellow)
-![React](https://img.shields.io/badge/React-19.2.0-blue?logo=react)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.17-38B2AC?logo=tailwind-css)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.23.25-black?logo=framer)
-
 A modern, highly interactive, and aesthetically premium portfolio web application built to showcase my journey, skills, and projects as a Front End Engineer. 
 
 Turning websites into experiences people love.

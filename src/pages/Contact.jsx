@@ -39,7 +39,7 @@ const Contact = () => {
   });
 
   return (
-    <div id="contact" className="max-w-screen bg-black text-white w-full h-full  mt-8 md:mt-24">
+    <div id="contact" className="max-w-screen bg-black dark:bg-zinc-900 border-t dark:border-t-zinc-800 text-white w-full h-full mt-8 md:mt-24">
       <div className="container mx-auto md:px-4 px-6">
         <div className="flex flex-col justify-center items-center">
 
@@ -57,7 +57,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="name"
-                className="w-full border px-3 md:py-4 py-2 rounded-sm"
+                className="w-full border border-gray-600 bg-transparent px-3 md:py-4 py-2 rounded-sm focus:outline-none focus:border-pink-500"
                 onChange={formik.handleChange}
                 value={formik.values.name}
               />
@@ -68,7 +68,7 @@ const Contact = () => {
               <input
                 type="email"
                 name="email"
-                className="w-full border px-3 md:py-4 py-2 rounded-sm"
+                className="w-full border border-gray-600 bg-transparent px-3 md:py-4 py-2 rounded-sm focus:outline-none focus:border-pink-500"
                 onChange={formik.handleChange}
                 value={formik.values.email}
               />
@@ -78,7 +78,7 @@ const Contact = () => {
               <label className="block mb-1 font-medium">Message</label>
               <textarea
                 name="message"
-                className="w-full border px-3 md:py-4 py-2 rounded-sm h-28"
+                className="w-full border border-gray-600 bg-transparent px-3 md:py-4 py-2 rounded-sm h-28 focus:outline-none focus:border-pink-500"
                 onChange={formik.handleChange}
                 value={formik.values.message}
               />
@@ -86,7 +86,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="w-full bg-white text-black text-lg font-bold py-3 rounded hover:bg-gray-300 hover:cursor-pointer transition"
+              className="w-full bg-white text-black text-lg font-bold py-3 rounded hover:bg-gray-300 transition"
             >
               Submit
             </button>

@@ -11,9 +11,9 @@ const Skills = () => {
         {/* Slider Wrapper */}
         <div className="relative w-full overflow-hidden h-28 flex items-center">
 
-          <div className="absolute left-0 top-0 h-full w-20 bg-linear-to-r from-white to-transparent z-20"></div>
+          <div className="absolute left-0 top-0 h-full w-20 bg-linear-to-r from-white dark:from-zinc-950 to-transparent z-20"></div>
 
-          <div className="absolute right-0 top-0 h-full w-20 bg-linear-to-l from-white to-transparent z-20"></div>
+          <div className="absolute right-0 top-0 h-full w-20 bg-linear-to-l from-white dark:from-zinc-950 to-transparent z-20"></div>
 
           <div className="flex animate-scroll">
             {[...techLogos, ...techLogos].map((logo, index) => (

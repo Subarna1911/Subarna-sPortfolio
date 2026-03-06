@@ -1,36 +1,41 @@
 @import "tailwindcss";
 
-body{
-  font-family:"Hanken Grotesk", sans-serif;
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
-h1, h2, h3{
- font-family: 'Erode', serif;
+h1,
+h2,
+h3 {
+  font-family: 'Erode', serif;
 }
 
-@layer utilities{
-  .spacing-md{
-    padding:6rem 0;
+@layer utilities {
+  .spacing-md {
+    padding: 6rem 0;
   }
 
-  .spacing-sm{
-    padding:4rem 0;
+  .spacing-sm {
+    padding: 4rem 0;
   }
 }
 
 /* Define custom keyframes */
 @keyframes scroll {
-  
+
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
 }
 
-@theme{
-   --animate-scroll: scroll 40s linear infinite;
+@theme {
+  --animate-scroll: scroll 40s linear infinite;
 }
 
 .custom-nav {

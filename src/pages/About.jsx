@@ -12,7 +12,7 @@ const About = () => {
     <div id="about" className="max-w-screen w-full h-full">
       <div className="container mx-auto md:px-6 px-4">
         <div className="flex flex-col justify-center items-center">
-          <div className="space-y-5 border px-8 py-16 rounded-sm">
+          <div className="space-y-5 border dark:border-zinc-400 px-8 py-16 rounded-sm">
             <h2 className="md:text-5xl text-3xl font-bold text-center">
               Professional Journey
             </h2>
@@ -26,24 +26,22 @@ const About = () => {
             <div className="flex gap-6 justify-center items-center">
               <button
                 onClick={() => handleTab("About")}
-                className={`w-full border hover:cursor-pointer px-2 py-4 max-w-60 inline-block text-lg rounded-sm transition-all duration-300
-      ${
-        activeTab === "About"
-          ? "bg-black text-white scale-105 shadow-lg"
-          : "hover:bg-black hover:text-white hover:scale-105 hover:shadow-lg active:scale-95"
-      }`}
+                className={`w-full border dark:border-zinc-700 hover:cursor-pointer px-2 py-4 max-w-60 inline-block text-lg rounded-sm transition-all duration-300
+      ${activeTab === "About"
+                    ? "bg-black text-white dark:bg-zinc-100 dark:text-black scale-105 shadow-lg"
+                    : "hover:bg-black hover:text-white dark:hover:bg-zinc-100 dark:hover:text-black hover:scale-105 hover:shadow-lg active:scale-95"
+                  }`}
               >
                 About Me
               </button>
 
               <button
                 onClick={() => handleTab("Exp")}
-                className={`w-full hover:cursor-pointer border px-2 py-4 max-w-60 text-lg rounded-sm transition-all duration-300
-      ${
-        activeTab === "Exp"
-          ? "bg-black text-white scale-105 shadow-lg"
-          : "hover:bg-black hover:text-white hover:scale-105 hover:shadow-lg active:scale-95"
-      }`}
+                className={`w-full hover:cursor-pointer border dark:border-zinc-700 px-2 py-4 max-w-60 text-lg rounded-sm transition-all duration-300
+      ${activeTab === "Exp"
+                    ? "bg-black text-white dark:bg-zinc-100 dark:text-black scale-105 shadow-lg"
+                    : "hover:bg-black hover:text-white dark:hover:bg-zinc-100 dark:hover:text-black hover:scale-105 hover:shadow-lg active:scale-95"
+                  }`}
               >
                 Experience
               </button>
@@ -78,7 +76,7 @@ const About = () => {
                 expContents.map((item) => (
                   <div key={item.id}>
                     <h3 className="text-2xl font-semibold">{item.title}</h3>
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
                       {item.company} — {item.time}
                     </p>
 

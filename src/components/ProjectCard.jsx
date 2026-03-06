@@ -2,14 +2,14 @@ import { MoveRight } from 'lucide-react'
 
 const ProjectCard = ({ data }) => {
   return (
-    <section className="relative w-full max-w-[420px] h-[480px] md:h-[500px] rounded-[18px] overflow-hidden">
-    <iframe
-  src={data.video}
-  className="absolute top-0 left-0 w-[200%] h-full -translate-x-1/4 object-cover"
-  allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-></iframe>
-  
+    <section className="relative w-full max-w-[420px] h-[480px] md:h-[500px] rounded-[18px] overflow-hidden  dark:border dark:border-zinc-400 dark:hover:border-pink-500">
+      <iframe
+        src={data.video}
+        className="absolute top-0 left-0 w-[200%] h-full -translate-x-1/4 object-cover"
+        allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
 

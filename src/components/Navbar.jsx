@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Menu, ArrowUpRight } from "lucide-react";
 import OverlayMenu from "../components/OverlayMenu";
+import ThemeToggle from "./ThemeToggle";
 import resume from '../assets/FrontEndResumeSubarna.pdf'
 
 const Navbar = () => {
-  const [menuOpen, setOpenMenu]       = useState(false);
-  const [isVisible, setIsVisible]     = useState(true);
+  const [menuOpen, setOpenMenu] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
@@ -47,21 +48,26 @@ const Navbar = () => {
             <div className="text-lg font-bold cursor-pointer">Subarna</div>
 
             {/* Right */}
-            <a
-              href={resume}
-              download="Subarna-Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button
-                aria-label="resume"
-                className="md:w-28 w-25 text-sm md:text-lg border rounded-full px-3  py-1 text-center 
-    flex gap-2 items-center cursor-pointer hover:border-pink-600 
-    hover:text-[#ff008c] duration-300"
+            <div className="flex items-center gap-4">
+              <div className="hidden md:block">
+                <ThemeToggle />
+              </div>
+              <a
+                href={resume}
+                download="Subarna-Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Resume <ArrowUpRight size={18} />
-              </button>
-            </a>
+                <button
+                  aria-label="resume"
+                  className="md:w-28 w-25 text-sm md:text-lg border rounded-full px-3  py-1 text-center 
+      flex gap-2 items-center cursor-pointer hover:border-pink-600 
+      hover:text-[#ff008c] duration-300 dark:border-gray-500 dark:hover:border-pink-500"
+                >
+                  Resume <ArrowUpRight size={18} />
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </nav>

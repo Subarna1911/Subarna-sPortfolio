@@ -10,14 +10,14 @@ const OverlayMenu = ({ isOpen, onClose }) => {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed inset-0 flex items-center justify-center z-50 bg-white"
+          className="fixed inset-0 flex items-center justify-center z-50 bg-white dark:bg-zinc-950"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
           <button
             onClick={onClose}
-            className="w-16 h-16 absolute top-6 right-6 text-black text-3xl"
+            className="w-16 h-16 absolute top-6 right-6 text-black dark:text-white text-3xl"
           >
             <FiX />
           </button>
@@ -33,7 +33,7 @@ const OverlayMenu = ({ isOpen, onClose }) => {
                 <a
                   href={`#${item}`}
                   onClick={onClose}
-                  className="text-4xl text-black font-semibold hover:text-pink-600"
+                  className="text-4xl text-black dark:text-white font-semibold hover:text-pink-600 dark:hover:text-pink-400"
                 >
                   {item.charAt(0).toUpperCase() + item.slice(1)}
                 </a>
